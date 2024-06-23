@@ -1,3 +1,4 @@
 FROM almalinux:9
 USER expense
-USER root
+#USER root
+CMD [ "sleep","100" ]
