@@ -1,3 +1,4 @@
 FROM almalinux:9
-COPY file.txt /home/ec2-user/file.txt
-CMD [ "sleep","100" ]
+RUN install nginx -y
+COPY file.txt /usr/share/html/file.txt
+CMD [ "nginx","-g","daemon off;" ]
