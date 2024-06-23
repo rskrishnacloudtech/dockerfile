@@ -1,4 +1,4 @@
 FROM almalinux:9
 ADD https://www.google.com /tmp/googlefile.txt
-#ADD file.txt /tmp/
+COPY https://www.google.com /tmp/copygooglefile.txt
 CMD [ "sleep","100" ]
