@@ -3,3 +3,4 @@ FROM almalinux:9
 #COPY file.txt /usr/share/nginx/html/file.txt
 COPY file.txt /tmp/
 #CMD [ "nginx","-g","daemon off;" ]
+CMD [ "sleep","100" ]
