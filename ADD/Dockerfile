@@ -1,3 +1,4 @@
 FROM almalinux:9
-ADD "www.google.com" /tmp/googlefile.txt
-ADD file.txt /tmp/
+ADD https://www.google.com /tmp/googlefile.txt
+#ADD file.txt /tmp/
+CMD [ "sleep","100" ]
